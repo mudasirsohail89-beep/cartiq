@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS EGO Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Registration Form -->
+    <div class="container" id="formContainer">
+        <h1>MS EGO</h1>
+        <p class="subtitle">Complete Your Project ⚽</p>
+
+        <form id="myForm" novalidate>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name">
+
+            <label for="emailPhone">Email or Phone</label>
+            <input type="text" id="emailPhone" placeholder="Enter email or phone">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <p id="message" aria-live="polite"></p>
+
+            <button type="submit" id="nextBtn">
+                <span id="btnText">NEXT</span>
+                <span class="arrow">➜</span>
+            </button>
+        </form>
+    </div>
+
+    <!-- WRONG SCREEN -->
+    <div id="wrongScreen" class="full-screen wrong-screen hidden">
+        <div class="wrong-content">
+            <div class="wrong-icon">✖</div>
+            <h1>WRONG!</h1>
+            <h2>TRY AGAIN!</h2>
+            <p>PLEASE ENTER VALID DETAILS</p>
+        </div>
+    </div>
+
+    <!-- MS EGO CELEBRATION SCREEN -->
+    <div id="celebration" class="full-screen celebration hidden">
+        <canvas id="fireworks"></canvas>
+
+        <div class="celebration-content">
+            <div class="football">⚽</div>
+            <h1 class="ego-title">MS EGO</h1>
+            <h2>GOOOOOOAL!</h2>
+            <p class="completed">PROJECT COMPLETED!</p>
+            <div class="trophy">🏆</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
